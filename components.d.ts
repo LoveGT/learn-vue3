@@ -12,8 +12,18 @@ declare module '@vue/runtime-core' {
     02_component: typeof import('./src/components/02_component.vue')['default']
     02_componentValueTransfer: typeof import('./src/components/02_component-value-transfer.vue')['default']
     03_registerComponent: typeof import('./src/components/03_register-component.vue')['default']
+    04_useScss: typeof import('./src/components/04_use-scss.vue')['default']
+    05_dynamicComponent: typeof import('./src/components/05_dynamic-component.vue')['default']
+    2: typeof import('./src/components/cpns/dynamic-a copy 2.vue')['default']
+    copy: typeof import('./src/components/cpns/dynamic-a copy.vue')['default']
+    DynamicA: typeof import('./src/components/cpns/dynamic-a.vue')['default']
+    DynamicB: typeof import('./src/components/cpns/dynamic-b.vue')['default']
+    DynamicC: typeof import('./src/components/cpns/dynamic-c.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
+    GlobalComponent: typeof import('./src/components/cpns/global-component.vue')['default']
+    GlobComponent: typeof import('./src/components/cpns/glob-component.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Menu: typeof import('./src/components/cpns/menu.vue')['default']
+    Tree: typeof import('./src/components/cpns/tree.vue')['default']
   }
 }

@@ -4,7 +4,7 @@
  * @Author: tanchongzheng
  * @Date: 2022-11-07 14:50:19
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-11-07 15:07:24
+ * @LastEditTime: 2022-11-08 10:06:10
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -23,5 +23,12 @@ export default defineConfig({
     Components({
       resolvers: [ElementPlusResolver()]
     })
-  ]
+  ],
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@use "./src/styles/global.scss";'
+      }
+    }
+  }
 })
