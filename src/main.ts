@@ -1,9 +1,9 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: tanchongzheng
  * @Date: 2022-11-07 14:50:19
- * @LastEditors: 
+ * @LastEditors:
  * @LastEditTime: 2022-11-08 11:46:41
  */
 import { createApp } from 'vue'

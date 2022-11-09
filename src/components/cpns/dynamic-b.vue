@@ -7,15 +7,9 @@
  * @LastEditTime: 2022-11-08 16:44:43
 -->
 <template>
-  <div>
-    我是B组件
-  </div>
+	<div>我是B组件</div>
 </template>
 
-<script setup lang="ts">
+<script setup lang="ts"></script>
 
-</script>
-
-<style scoped>
-
-</style>
+<style scoped></style>

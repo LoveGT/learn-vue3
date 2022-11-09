@@ -1,0 +1,15 @@
+/dist/*
+.local
+.output.js
+/node_modules/**
+
+**/*.svg
+**/*.sh
+
+/public/*
+
+components.d.ts
+vite-env.d.ts
+commitlint.config.js
+tsconfig.json
+tsconfig.node.json

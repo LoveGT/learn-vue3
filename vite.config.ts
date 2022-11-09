@@ -1,6 +1,6 @@
 /*
- * @Descripttion: 
- * @version: 
+ * @Descripttion:
+ * @version:
  * @Author: tanchongzheng
  * @Date: 2022-11-07 14:50:19
  * @LastEditors: Please set LastEditors
@@ -14,21 +14,24 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    vue(),
-    AutoImport({
-      imports: ['vue'], 
-      resolvers: [ElementPlusResolver()]
-    }),
-    Components({
-      resolvers: [ElementPlusResolver()]
-    })
-  ],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: '@use "./src/styles/global.scss";'
-      }
-    }
-  }
+	plugins: [
+		vue(),
+		AutoImport({
+			imports: ['vue'],
+			resolvers: [ElementPlusResolver()],
+			eslintrc: {
+				enabled: true
+			}
+		}),
+		Components({
+			resolvers: [ElementPlusResolver()]
+		})
+	],
+	css: {
+		preprocessorOptions: {
+			scss: {
+				additionalData: '@use "./src/styles/global.scss";'
+			}
+		}
+	}
 })
