@@ -8,12 +8,7 @@
 -->
 <template>
 	<div class="layout">
-		<Menu
-			ref="menuRef"
-			:data-list="list"
-			title="察颜悦色"
-			@menu-send="onSend"
-		></Menu>
+		<Menu ref="menuRef" :data-list="list" title="察颜悦色" @menu-send="onSend"></Menu>
 		<div class="layout-right">
 			<header>我是头部</header>
 			<article>我是内容</article>

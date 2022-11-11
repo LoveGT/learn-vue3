@@ -8,18 +8,9 @@
 -->
 <template>
 	<div class="tree app-container" style="margin-left: 10px">
-		<div
-			class="tree-item"
-			@click.stop="itemClick(item)"
-			v-for="(item, index) in treeList"
-			:key="index"
-		>
+		<div class="tree-item" @click.stop="itemClick(item)" v-for="(item, index) in treeList" :key="index">
 			{{ item.name }}
-			<Tree
-				@on-click="itemClick"
-				v-if="item?.children?.length"
-				:treeList="item.children"
-			></Tree>
+			<Tree @on-click="itemClick" v-if="item?.children?.length" :treeList="item.children"></Tree>
 		</div>
 	</div>
 </template>

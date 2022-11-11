@@ -10,7 +10,17 @@ import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
 
+import mitt from 'mitt'
+const Mit = mitt()
+declare module 'vue' {
+	export interface ComponentCustomProperties {
+		$Bus: typeof Mit
+	}
+}
 import GlobalComponent from './components/cpns/global-component.vue'
 const app = createApp(App)
+
+app.config.globalProperties.$Bus = Mit
+
 app.component('GlobalComponent', GlobalComponent)
 app.mount('#app')

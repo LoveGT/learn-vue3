@@ -14,7 +14,14 @@ declare module '@vue/runtime-core' {
     03_registerComponent: typeof import('./src/components/03_register-component.vue')['default']
     04_useScss: typeof import('./src/components/04_use-scss.vue')['default']
     05_dynamicComponent: typeof import('./src/components/05_dynamic-component.vue')['default']
+    06_providerInject: typeof import('./src/components/06_provider-inject.vue')['default']
+    07_brotherComponent: typeof import('./src/components/07_brother-component.vue')['default']
+    08_tsxLearn: typeof import('./src/components/08_tsx-learn.vue')['default']
+    09_vModelUsage: typeof import('./src/components/09_v-model-usage.vue')['default']
     2: typeof import('./src/components/cpns/dynamic-a copy 2.vue')['default']
+    A: typeof import('./src/components/cpns/A.vue')['default']
+    B: typeof import('./src/components/cpns/B.vue')['default']
+    C: typeof import('./src/components/cpns/C.vue')['default']
     copy: typeof import('./src/components/cpns/dynamic-a copy.vue')['default']
     DynamicA: typeof import('./src/components/cpns/dynamic-a.vue')['default']
     DynamicB: typeof import('./src/components/cpns/dynamic-b.vue')['default']
@@ -24,6 +31,7 @@ declare module '@vue/runtime-core' {
     GlobComponent: typeof import('./src/components/cpns/glob-component.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
     Menu: typeof import('./src/components/cpns/menu.vue')['default']
+    Model: typeof import('./src/components/cpns/model.vue')['default']
     Tree: typeof import('./src/components/cpns/tree.vue')['default']
   }
 }
